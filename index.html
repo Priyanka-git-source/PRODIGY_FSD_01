@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure User Authentication</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+
+  <div class="container">
+    <h2 id="form-title">Login</h2>
+    <form id="auth-form">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit" id="submit-btn">Login</button>
+      <p class="toggle-text">Don't have an account? <span id="toggle-form">Register</span></p>
+    </form>
+
+    <div id="protected-content" class="hidden">
+      <h3>Welcome, <span id="user-display"></span>!</h3>
+      <p>You have accessed a protected route.</p>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
